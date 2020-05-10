@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RubiLang</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript">$(window).on('load', function () {
+            var $preloader = $('#p_prldr'),
+                $svg_anm = $preloader.find('.fade2');
+            $svg_anm.fadeOut();
+            $preloader.delay(500).fadeOut('slow');
+        });</script>
+</head>
+
+<body>
+    <div id="p_prldr"><span class="fade1">RubiLang</span><span class="fade2 fade1">Пожалуйста, подождите</span></div>
+
+    <header>
+
+        <div class="top-line">
+            <button class="BTN_TopMenu" onclick="menu_mobile()"><img src="img/menu.png"></button>
+            <button class="BTN_TopMenu BTN_Menu_none" onclick="menu_mobile()"><img src="img/menu_close.png"></button>
+            <img>
+            <div class="Topmenu">
+                <form action="index.html" target="_self">
+                    <button><img src="img/CoursesBTN.png">
+                        <p>На главную</p>
+                    </button>
+                </form>
+
+                <form action="index.html" target="_self">
+                    <button><img src="img/CoursesBTN.png">
+                        <p>Аккаунт</p>
+                    </button>
+                </form>
+
+                <form action="index.html" target="_self">
+                    <button><img src="img/CoursesBTN.png">
+                        <p>Курсы</p>
+                    </button>
+                </form>
+
+                <form action="index.html" target="_self">
+                    <button><img src="img/FAQ.png">
+                        <p>FAQ</p>
+                    </button>
+                </form>
+
+                <form action="#service" target="_self">
+                    <button><img src="img/CoursesBTN.png">
+                        <p>Поддержка</p>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="menu menu_container">
+            <button class="BTN_Menu" onclick="menu_desctop()"><img src="img/menu.png"></button>
+            <button class="BTN_Menu BTN_Menu_none" onclick="menu_desctop()"><img src="img/menu_close.png"></button>
+            <form action="index.html" target="_self">
+                <button><img src="img/CoursesBTN.png"></button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button><img src="img/CoursesBTN.png"></button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button><img src="img/CoursesBTN.png"></button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button><img src="img/FAQ.png"></button>
+            </form>
+
+            <form action="#service" target="_self">
+                <button><img src="img/CoursesBTN.png"></button>
+            </form>
+
+        </div>
+        <div class="add_menu menu_container">
+            <form>
+                <button></button>
+            </form>
+            <form action="index.html" target="_self">
+                <button>На главную</button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button>Аккаунт</button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button>Курсы</button>
+            </form>
+
+            <form action="index.html" target="_self">
+                <button>FAQ</button>
+            </form>
+
+            <form action="#service" target="_self">
+                <button>Поддержка</button>
+            </form>
+
+        </div>
+        </div>
+
+
+        <div class="page">
+            <div class="container">
+                <div class="lvl_num"><div>1</div></div>
+                <div class="langImg">
+                    <img src="img/html5_logo.png">
+                </div>
+                <ul class="progress">
+                    <li id="lvl"></li>
+                    <li></li>
+                    <li class="lvl_3"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="courses">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contacts">
+            <p>Контакты</p>
+            <div>
+                <img src="img/vk.png">
+                <ul>
+                    <li><a href="https://vk.com/id506757876">mishanay71</a></li>
+                    <li><a href="https://vk.com/ucccu">ucccu</a></li>
+                    <li><a href="https://vk.com/iacubovich">iacubovich</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/insta.png">
+                <ul>
+                    <li><a href="https://www.instagram.com/_mishanay_71_?r=nametag">_mishanay_71_</a></li>
+                    <li><a href="https://www.instagram.com/_ucccu_?r=nametag">_ucccu_</a></li>
+                    <li><a href="https://www.instagram.com/iacubovichr?r=nametag">iacubovichr</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Почта -->
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <form action="mail.php" method="POST">
+                        <legend>Поддержка</legend>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" name="user_name" placeholder="Введите имя">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" id="" name="user_question"
+                                placeholder="Задайте вопрос"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" name="user_email" placeholder="Укажите почту">
+                        </div>
+
+                        <button type="submit" id="service" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div><!-- .col-sm-4 -->
+            </div> <!-- .row -->
+
+        </div><!-- /.container -->
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

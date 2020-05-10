@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RubiLang</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <link rel="stylesheet" type="text/css" href="img.css">
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+
+  <script type="text/javascript">$(window).on('load', function () {
+      var $preloader = $('#p_prldr'),
+        $svg_anm = $preloader.find('.fade2');
+      $svg_anm.fadeOut();
+      $preloader.delay(500).fadeOut('slow');
+    });</script>
+</head>
+
+<body>
+  <div id="p_prldr"><span class="fade1">RubiLang</span><span class="fade2 fade1">Пожалуйста, подождите</span></div>
+
+  <header>
+
+    <div class="top-line">
+
+      <!-- Меню мобилка -->
+      <button class="BTN_TopMenu" onclick="menu_mobile()"><img src="img/menu.png"></button>
+      <button class="BTN_TopMenu BTN_Menu_none" onclick="menu_mobile()"><img src="img/menu_close.png"></button>
+      <img>
+      <div class="Topmenu">
+
+        <form action="html_start.html" target="_self">
+          <button><img src="img/CoursesBTN.png">
+            <p>Аккаунт</p>
+          </button>
+        </form>
+
+        <form action="html_start.html" target="_self">
+          <button><img src="img/CoursesBTN.png">
+            <p>Курсы</p>
+          </button>
+        </form>
+
+        <form action="html_start.html" target="_self">
+          <button><img src="img/FAQ.png">
+            <p>FAQ</p>
+          </button>
+        </form>
+
+        <form action="#service" target="_self">
+          <button><img src="img/CoursesBTN.png">
+            <p>Поддержка</p>
+          </button>
+        </form>
+
+      </div>
+      <!-- ------------------------------------------- -->
+    </div>
+
+    <!-- Слайдер -->
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <div id="slide1" style="height: 250px;">1</div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: green;">2</div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: violet;">3</div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: coral;">4</div>
+        </div>
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+    </div>
+    <!-- -- -->
+
+
+  </header>
+
+
+  <main>
+    <!-- Меню десктоп -->
+    <div class="menu" id="elementId1">
+      <button class="BTN_Menu" onclick="menu_desctop()"><img src="img/menu.png"></button>
+      <button class="BTN_Menu BTN_Menu_none" onclick="menu_desctop()"><img src="img/menu_close.png"></button>
+      <form action="html_start.html" target="_self">
+        <button><img src="img/CoursesBTN.png"></button>
+      </form>
+
+      <form action="html_start.html" target="_self">
+        <button><img src="img/CoursesBTN.png"></button>
+      </form>
+
+      <form action="html_start.html" target="_self">
+        <button><img src="img/FAQ.png"></button>
+      </form>
+
+      <form action="#service" target="_self">
+        <button><img src="img/CoursesBTN.png"></button>
+      </form>
+
+    </div>
+    <!-- Выезжающее меню десктоп -->
+    <div class="add_menu" id="elementId2">
+      <form>
+        <button></button>
+      </form>
+
+      <form action="html_start.html" target="_self">
+        <button>Аккаунт</button>
+      </form>
+
+      <form action="html_start.html" target="_self">
+        <button>Курсы</button>
+      </form>
+
+      <form action="html_start.html" target="_self">
+        <button>FAQ</button>
+      </form>
+
+      <form action="#service" target="_self">
+        <button>Поддержка</button>
+      </form>
+
+    </div>
+    <!-- --------------------------------------- -->
+
+
+
+    <div class="courses">
+      <p>Курсы</p>
+      <div class="course" id="html">
+        <div>
+          <p>HTML</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+
+      <div class="course" id="css">
+        <div>
+          <p>CSS</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+
+      <div class="course" id="js">
+        <div>
+          <p>Java Script</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+
+      <div class="course" id="C">
+        <div>
+          <p>C#</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+
+      <div class="course" id="ptn">
+        <div>
+          <p>Python</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+
+      <div class="course" id="pscl">
+        <div>
+          <p>Pascal</p>
+        </div>
+        <form action="html_start.html" target="_self">
+          <button>Перейти к курсу</button>
+        </form>
+
+      </div>
+    </div>
+
+
+
+  </main>
+  <!-- /-------------------------------------------------------------------------------------/ -->
+  <footer>
+    <div class="contacts">
+      <p>Контакты</p>
+      <div>
+        <img src="img/vk.png">
+        <ul>
+          <li><a href="https://vk.com/id506757876">mishanay71</a></li>
+          <li><a href="https://vk.com/ucccu">ucccu</a></li>
+          <li><a href="https://vk.com/iacubovich">iacubovich</a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/insta.png">
+        <ul>
+          <li><a href="https://www.instagram.com/_mishanay_71_?r=nametag">_mishanay_71_</a></li>
+          <li><a href="https://www.instagram.com/_ucccu_?r=nametag">_ucccu_</a></li>
+          <li><a href="https://www.instagram.com/iacubovichr?r=nametag">iacubovichr</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Почта -->
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <form action="mail.php" method="POST">
+            <legend>Поддержка</legend>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="" name="user_name" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+              <textarea type="text" class="form-control" id="" name="user_question"
+                placeholder="Задайте вопрос"></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="" name="user_email" placeholder="Укажите почту">
+            </div>
+
+            <button type="submit" id="service" class="btn btn-primary">Отправить</button>
+          </form>
+        </div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
+
+  </footer>
+
+
+
+
+
+
+
+  <!--  Скрипт для слайдера  -->
+  <script>
+    var slider = multiItemSlider('.slider', {
+      isCycling: true
+    });
+
+    $(function () {
+      var height = $('#elementId1').height(); //получаем высоту одного элемента
+      $('#elementId2').height(height); //записываем высоту другому элементу
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

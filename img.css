@@ -1,0 +1,29 @@
+.slider__item #slide1 {
+    background-image: url(img/slide_bg_1.jpg);
+}
+
+/*----- Фото на курсах -------------*/
+
+.course#html div {
+    background-image: url(img/course_bg_1.jpg);
+}
+
+.course#css div {
+    background-image: url(img/course_bg_2.jpg);
+}
+
+.course#js div {
+    background-image: url(img/course_bg_3.jpg);
+}
+
+.course#C div {
+    background-image: url(img/course_bg_4.jpg);
+}
+
+.course#ptn div {
+    background-image: url(img/course_bg_5.jpg);
+}
+
+.course#pscl div {
+    background-image: url(img/course_bg_6.jpg);
+}

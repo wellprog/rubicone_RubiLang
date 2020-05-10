@@ -1,0 +1,185 @@
+
+/************************************************************/
+
+.menu {
+    width: 6%;
+    height: 450px;
+    position: absolute;
+    z-index: 2;
+}
+.add_menu {
+    width: 14%;
+    padding-left: 6%;
+    height: 450px;
+    position: absolute;
+    background: #4F5D75;
+    z-index: 1;
+    transition: 0.7s;
+    transform: translateX(-100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 9% 100%, 0 100%);
+}
+
+.menu button, .add_menu button, .menu button img {
+    background: none;
+    width: 80%;
+    height: auto;
+    border: 0;
+    margin: 2.5% auto;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.menu button {
+    height: 60px;
+    margin: auto;
+}
+
+
+
+.add_menu button {
+    height: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+.add_menu ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 2%;
+    height: 100%;
+}
+
+.add_menu ul li {
+    height: 5%;
+    margin: 2.5%;
+    list-style-type: none;
+    font-size: 100%;
+}
+
+
+
+/**************************************************************/
+
+.Topmenu {
+    display: none;
+    width: 60%;
+    padding-left: 1%;
+    height: 1500%;
+    position: absolute;
+    top: 50px;
+    background: #4F5D75;
+    z-index: 999;
+    transition: 0.7s;
+    transform: translateX(-100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 9% 100%, 0 100%);
+}
+
+.BTN_TopMenu,  .Topmenu button,   .Topmenu button img, .BTN_TopMenu img {
+    background: none;
+    width: 95%;
+    height: auto;
+    border: 0;
+    margin: 2.5%;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.Topmenu button {
+    width: 100%;
+    text-align: left;
+    line-height: 100%;
+}
+
+.Topmenu button p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.Topmenu button img {
+    width: 40px;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.BTN_TopMenu {
+    display: none;
+    margin-top: 10px;
+    width: 40px;
+    height: 30px;
+}
+
+.BTN_TopMenu img {
+    width: 40px;
+    height: 30px;
+    margin: 0;
+}
+
+
+/*---------------------------*/
+
+.menu {
+    text-align: center;
+}
+.add_menu form, .menu form {
+    height: 60px;
+    background: #4F5D75;
+    
+}
+
+.add_menu form button, .menu form button {
+    height: 100%;
+}
+
+.add_menu form button {
+    width: 100%;
+}
+.BTN_Menu_x {
+    transform: translateX(0%);
+}
+
+
+/********************************************************/
+main{
+    position: relative;
+}
+.menu_container {
+    width: 6% ;
+    background: #4F5D75;
+    position: relative;
+    float: left;
+}
+
+.add_menu.menu_container {
+    width: 14%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+/*******************************************************/
+
+@media only screen and (max-width: 656px) {
+    .menu, .add_menu {
+        display: none;
+    }
+    .Topmenu, .BTN_TopMenu {
+        display: block;
+    }
+    .top-line {
+        height: 50px;
+        position: fixed;
+    }
+}
+
+/********************************************************/
+.BTN_Menu_none {
+    display: none;
+}

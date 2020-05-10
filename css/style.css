@@ -1,0 +1,547 @@
+* {
+    outline: none;
+    background-repeat: no-repeat;
+}
+
+/******************** Загрузка *****************/
+
+#p_prldr {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #4F5D75;
+    z-index: 99999;
+}
+
+#p_prldr .fade1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 700%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 80px;
+}
+
+#p_prldr .fade2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 1800%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 656px) {
+    #p_prldr .fade1 {
+        font-size: 50px;
+        line-height: 1000%;
+    }
+    #p_prldr .fade2 {
+        font-size: 20px;
+        line-height: 3100%;
+    }
+}
+
+/***************************************************************************/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #fff;
+    background: #4F5D75;
+}
+
+/* --------------- header ------------------*/
+
+header {
+    width: 100%;
+}
+
+.top-line {
+    width: 100%;
+    height: 80px;
+    background: #2D3142;
+    z-index: 999;
+}
+
+/************************************************************************************************/
+
+/*--------------------------------- Main -----------------------------------------------------*/
+
+main {
+    width: 100%;
+}
+
+/********* надпись курсы ***************/
+
+main>.courses>p {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/******* блок с курсами **********/
+
+main>.courses {
+    width: 90%;
+    min-height: 50%;
+    float: right;
+    padding: 2%;
+    text-align: center;
+    background: #BFC0C0;
+    color: #2D3142;
+}
+
+/*------ блок курса -------*/
+
+.course {
+    overflow: hidden;
+    height: 300px;
+    background: #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0;
+    display: inline-block;
+    margin: 2%;
+    width: 43.5%;
+}
+
+.course div {
+    height: 65%;
+    overflow: hidden;
+    background-size: 100% auto;
+}
+
+.course p {
+    padding-top: 5%;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.course button {
+    background: #EF8354;
+    color: #fff;
+    font-size: 19px;
+    width: 60%;
+    height: 16%;
+    padding: 2%;
+    margin: 10% auto;
+    border: 0;
+    border-radius: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .course button {
+        margin: 5% auto;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    main {
+        width: 100%;
+        background: none;
+    }
+    .course {
+        display: block;
+        margin: 6.5%;
+        width: 87%;
+        height: 250px;
+    }
+    main>.courses {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*------------------------------------- FOOTER --------------------------------*/
+
+footer {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    min-height: 220px;
+    background: #2D3142;
+    z-index: 1;
+    clear: both;
+    text-align: center;
+}
+
+/*-----------------------*/
+
+footer .contacts {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 4.5%;
+    height: 100%;
+    text-align: center;
+}
+
+footer .contacts p {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 700;
+}
+
+footer .contacts img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+}
+
+footer .contacts ul {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 3px 5px;
+}
+
+footer .contacts ul li, footer .contacts ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23.33px;
+    width: 120px;
+    text-align: left;
+}
+
+/*------------- форма ---------------*/
+
+footer .container {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 4.5%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .container legend {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+footer .container .form-group {
+    margin: 0;
+    width: 100%;
+}
+
+footer .container input, footer .container textarea {
+    width: 93%;
+    margin: 0 2%;
+    border-radius: 30px;
+    height: 30px;
+    padding: 6px;
+    border: 0;
+    margin-top: 10px;
+}
+
+footer .container input:last-child {
+    margin-top: 5px;
+}
+
+footer .container textarea {
+    height: 60px;
+    border-radius: 25px;
+    padding: 10px 6px;
+}
+
+footer .container .btn {
+    border-radius: 30px;
+    background: #EF8354;
+    color: #fff;
+    font-size: 18px;
+    width: 60%;
+    height: 16%;
+    padding: 2%;
+    margin: 10px 20%;
+    border: 0;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 656px) {
+    footer .container {
+        display: block;
+        width: 91%;
+    }
+    footer .contacts {
+        display: block;
+        width: 91%;
+    }
+}
+
+/*************************************************************************************/
+
+/*-------------------------------- Станица выбора уровня ------------------------------*/
+
+.page {
+    width: 94%;
+    min-height: 450px;
+    background: #BFC0C0;
+    position: relative;
+    display: inline-block;
+    right: 0;
+    float: right;
+}
+
+.page .container {
+    width: 95%;
+    min-height: 360px;
+    margin: 45px 2.5%;
+    margin-top: 90px;
+    background: #fff;
+    border-radius: 30px;
+    float: right;
+}
+
+.page .langImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #4F5D75;
+    position: relative;
+    top: 0;
+    margin: -45px auto 0 auto;
+    text-align: center;
+}
+
+.page .langImg img {
+    height: 56px;
+    margin: 19px auto;
+    max-width: 65px;
+}
+
+/*---------------------------------------------------*/
+
+.page .courses {
+    text-align: center;
+    position: relative;
+    margin: 15px 0;
+}
+
+.page .courses .space {
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.page .lesson {
+    width: 200px;
+    height: 220px;
+    background: #fff;
+    border-radius: 30px;
+    border: 5px solid #4F5D75;
+    text-align: center;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.page .lesson div {
+    width: 100%;
+    background: #EF8354;
+    height: 135px;
+    margin-top: -20px;
+    line-height: 115px;
+    overflow: hidden;
+}
+
+.page .lesson p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.page .lesson form {
+    margin: 60px auto 0 auto;
+    width: 180px;
+    height: 50px;
+}
+
+.page .lesson button {
+    position: relative;
+    bottom: 25px;
+    width: 180px;
+    height: 60px;
+    background: #EF8354;
+    border: 0;
+    border-radius: 30px;
+}
+
+.page .lesson img {
+    height: 35px;
+    width: auto;
+}
+
+.page .lesson button:first-child {
+    display: none;
+}
+
+/*-----Пройденный уровень ------*/
+
+.page .lesson.lesson_done button:first-child {
+    display: block;
+}
+
+.page .lesson.lesson_done button:last-child {
+    display: none;
+}
+
+/*-----Закрытый уровень ------*/
+
+.page .lesson.lesson_closed button:first-child {
+    display: none;
+}
+
+.page .lesson.lesson_closed button:last-child {
+    display: block;
+    background: #BFC0C0;
+}
+
+.page .lesson.lesson_closed div {
+    background: #BFC0C0;
+}
+
+/*********************/
+
+@media only screen and (max-width: 656px) {
+    .page {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .page .lesson {
+        width: 140px;
+        height: 200px;
+        margin: 0 3px;
+    }
+    .page .lesson div {
+        height: 115px;
+        line-height: 95px;
+    }
+    .page .lesson p {
+        font-size: 18px;
+    }
+    .page .lesson form {
+        margin: 70px auto 0 auto;
+        width: 120px;
+        height: 50px;
+    }
+    .page .lesson button {
+        width: 120px;
+        height: 50px;
+    }
+    .page .lesson img {
+        height: 28px;
+    }
+    .page .langImg {
+        width: 60px;
+        height: 60px;
+        margin: -30px auto 0 auto;
+    }
+    .page .langImg img {
+        height: 36px;
+        margin: 14px auto;
+        max-width: 50px;
+    }
+
+    .page .container {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .page .container {
+        width: 100%;
+        min-height: 360px;
+        margin: 45px 0;
+        margin-top: 70px;
+    }
+}
+
+/*********************************************************************************/
+
+.page .container .lvl_num {
+    width: 90px;
+    height: 60px;
+    padding-right: 90px;
+    position: relative;
+    margin: -80px auto 0 auto;
+}
+
+.page .container .lvl_num>div {
+    width: 60px;
+    height: 60px;
+    background: #4F5D75;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.page .progress {
+    padding: 0;
+    margin: -13px auto 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.page .progress li {
+    display: inline-block;
+    width: 12%;
+    margin: 0 1%;
+    height: 9px;
+    border-radius: 30px;
+    background: #BFC0C0;
+}
+
+.page .progress li.lvl_3 {
+    margin-right: 10%;
+}
+
+.page .progress li#lvl {
+    background: #EF8354;
+}
+
+@media only screen and (max-width: 656px) {
+    .page .container .lvl_num {
+        width: 65px;
+        height: 45px;
+        padding-right: 50px;
+        margin: -50px auto 0 auto;
+    }
+    .page .container .lvl_num>div {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+
+    .page .progress li {
+        margin: 0 0.8%;
+        height: 9px;
+    }
+    
+}
+
+@media only screen and (max-width: 340px) {
+    .page .progress {
+        padding: 0;
+        margin: -10px auto 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}

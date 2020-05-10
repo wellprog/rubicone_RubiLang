@@ -35,7 +35,7 @@
    <?php  if(isset($fsmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fsmsg; ?> </div><?php }?>
    <input type="text" name="username" class="form-control" placeholder="Имя" required>
    <input type="email" name="email" class="form-control" placeholder="Почта" required>
-   <input type="password" name="password" class="form-control" placeholder="Пароль" required>
+   <input type="password" name="password" class="form-control" placeholder="Пароль" autocomplete="on" required>
    <button class="btn btn-lg btn-primary btn-block" type="submit">Регистрация</button>
   </form>
  </div>

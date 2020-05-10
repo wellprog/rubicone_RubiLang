@@ -22,7 +22,6 @@
 
     if($result){
      $smsg="Регистрация прошла успешно";
-     header('location: index.php');
      }else{
      $fsmsg="Ошибка";
     }

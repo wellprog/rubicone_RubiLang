@@ -10,7 +10,7 @@
 <body>
 <?php
 
- require("connection_db.php");
+ require('connection_db.php');
 
  if(isset($_POST['username']) && isset($_POST['password'])){
   $username = $_POST['username'];
@@ -22,7 +22,7 @@
 
     if($result){
      $smsg="Регистрация прошла успешно";
-     header('index.php')
+     header('location: index.php');
      }else{
      $fsmsg="Ошибка";
     }

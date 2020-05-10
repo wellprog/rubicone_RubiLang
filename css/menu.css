@@ -161,7 +161,7 @@ main{
 .add_menu.menu_container {
     width: 14%;
     position: absolute;
-    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 70%, 9% 100%, 0 100%);
 }
 
 /*******************************************************/

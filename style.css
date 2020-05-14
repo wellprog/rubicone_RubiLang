@@ -430,6 +430,9 @@ footer .container .btn {
 /*********************/
 
 @media only screen and (max-width: 656px) {
+    .page .back_btn {
+        top: 21px;
+    }
     .page {
         width: 100%;
         margin-top: 40px;
@@ -672,7 +675,7 @@ footer .container .btn {
         font-size: 18px;
         margin-bottom: 25px;
     }
-    .page .container form {
+    .page .container>form {
         width: 180px;
         height: 40px;
         position: absolute;

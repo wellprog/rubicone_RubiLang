@@ -27,16 +27,19 @@
             <div>
                 <input type="checkbox" id="check2" name="check">
                 <label for="check2"><img src="img/checkbox.png"><img src="img/checkbox_checked.png"></label>
+                <p>Это один из вариантов ответа, он более длинный, но это ничем тебе не поможет</p>
             </div>
 
             <div>
                 <input type="checkbox" id="check3" name="check">
                 <label for="check3"><img src="img/checkbox.png"><img src="img/checkbox_checked.png"></label>
+                <p>Это один из вариантов ответа, но это ничем тебе не поможет</p>
             </div>
 
             <div>
                 <input type="checkbox" id="check4" name="check">
                 <label for="check4"><img src="img/checkbox.png"><img src="img/checkbox_checked.png"></label>
+                <p>Это один из вариантов ответа, но это ничем тебе не поможет</p>
             </div>
 
         </div>

@@ -585,13 +585,12 @@ footer .container .btn {
 }
 
 .exercise p {
-    display: inline-block;
+    display: contents;
     vertical-align: top;
     width: 95%;
     float: right;
     color: #000;
     margin: 0;
-    margin-top: -1.5px;
     min-height: 20px;
     line-height: 20px;
 }
@@ -631,6 +630,7 @@ footer .container .btn {
     width: 20px;
     display: inline-block;
     vertical-align: top;
+    margin-top: 5px;
     padding: 0 0 0 0px;
 }
 
@@ -648,6 +648,7 @@ footer .container .btn {
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-top: 5px;
     padding: 0 0 0 0px;
 }
 
@@ -705,6 +706,7 @@ footer .container .btn {
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-top: 5px;
     vertical-align: top;
     padding: 0 0 0 0px;
 }
@@ -723,6 +725,7 @@ footer .container .btn {
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-top: 5px;
     padding: 0 0 0 0px;
 }
 

@@ -20,5 +20,5 @@ $_SESSION["user"] = $user;
 
 $mysql->close();
 
-header('Location: index2.html');
+header('Location: index.php');
 ?>

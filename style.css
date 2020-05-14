@@ -601,7 +601,7 @@ footer .container .btn {
 /*-------------------------------------------*/
 
 .exercise input[type="radio"] {
-    visibility: hidden;
+    display: none;
 }
 
 .exercise label img {

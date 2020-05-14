@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel=”stylesheet” type=”text/css” href=”style.css”>
+    <title>RubiLang Регестрация</title>
 </head>
+
 <body>
-<?php
+    <div class="container">
+        <h1>Форма Регестрации</h1>
+        <form action="check.php" method="POST">
+            <input type="text" class="formcontrol" name="login" id="login" placeholder="Введите логин"><br>
+            <input type="text" class="formcontrol" name="email" id="email" placeholder="Введите email"><br>
+            <input type="password" class="formcontrol" name="pass" id="pass" placeholder="Введите пароль"><br>
+            <button class="btn" type="submit">Зарегистрироваться</button>
+        </form>
+        <h1>Форма Авторизации</h1>
+        <form action="auto.php" method="POST">
+            <input type="text" class="formcontrol" name="login1" id="login1" placeholder="Введите логин"><br>
+            <input type="password" class="formcontrol" name="pass1" id="pass1" placeholder="Введите пароль"><br>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
 
- require('connection_db.php');
-
- if(isset($_POST['username']) && isset($_POST['password'])){
-  $username = $_POST['username'];
-  $email = $_POST['email'];
-  $password = $_POST['password'];
-
-  $query = "INSERT INTO users (username , password , email) VALUES ('$username' , '$email' , '$password' )";
-  $result = mysqli_query($connection, $query);
-
-    if($result){
-     $smsg="Регистрация прошла успешно";
-     }else{
-     $fsmsg="Ошибка";
-    }
- }
-?>
- <div class="container"> 
-  <form action="" class="form-signin" method="POST">  
-   <h2>Регистрация</h2>
-   <?php  if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php }?>
-   <?php  if(isset($fsmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fsmsg; ?> </div><?php }?>
-   <input type="text" name="username" class="form-control" placeholder="Имя" required>
-   <input type="email" name="email" class="form-control" placeholder="Почта" required>
-   <input type="password" name="password" class="form-control" placeholder="Пароль" autocomplete="on" required>
-   <button class="btn btn-lg btn-primary btn-block" type="submit">Регистрация</button>
-  </form>
- </div>
 </body>
+
 </html>

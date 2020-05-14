@@ -122,3 +122,4 @@
 
 
         <div class="page">
+                <button class="back_btn" onclick="history.back(-2); return false;"></button>

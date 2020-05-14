@@ -32,16 +32,16 @@
                         <legend>Поддержка</legend>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" name="user_name" placeholder="Введите имя">
+                            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Введите имя">
                         </div>
 
                         <div class="form-group">
-                            <textarea type="text" class="form-control" id="" name="user_question"
+                            <textarea type="text" class="form-control" id="user_question" name="user_question"
                                 placeholder="Задайте вопрос"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" name="user_email" placeholder="Укажите почту">
+                            <input type="text" class="form-control" id="user_email" name="user_email" placeholder="Укажите почту">
                         </div>
 
                         <button type="submit" id="service" class="btn btn-primary">Отправить</button>
@@ -55,8 +55,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>

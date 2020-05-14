@@ -10,7 +10,7 @@
         </div>
         <ul class="progress">
             <li id="lvl"></li>
-            <li></li>
+            <li id="lvl"></li>
             <li class="lvl_3"></li>
             <li></li>
             <li></li>
@@ -20,22 +20,26 @@
             <p>Задание: выберите все верные на ваш взгляд варианты ответов про html</p>
             <div class="exercise">
                 <div>
-                    <input type="radio" id="shipadd2" name="radio" />
-                    <label for="shipadd2"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
+                    <input type="checkbox" id="check1" name="check">
+                    <label for="check1"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
                     <p>Это один из вариантов ответа, но это ничем тебе не поможет</p>
                 </div>
 
                 <div>
-                    <input type="radio" id="shipadd1" name="radio" />
-                    <label for="shipadd1"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
-                    <p>Это верный вариант ответа, но тебе должно быть всё равно</p>
+                    <input type="checkbox" id="check2" name="check">
+                    <label for="check2"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
                 </div>
 
                 <div>
-                    <input type="radio" id="shipadd3" name="radio" />
-                    <label for="shipadd3"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
-                    <p>Волк не волк, если волк волк, то волк не заявляет о том, что он не волк</p>
+                    <input type="checkbox" id="check3" name="check">
+                    <label for="check3"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
                 </div>
+
+                <div>
+                    <input type="checkbox" id="check4" name="check">
+                    <label for="check4"><img src="img/radio.png"><img src="img/radio_checked.png"></label>
+                </div>
+
             </div>
         </div>
         <form action="" target="_self">

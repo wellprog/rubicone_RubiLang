@@ -8,7 +8,7 @@
       <img>
       <div class="Topmenu">
 
-        <form action="html_start.php" target="_self">
+        <form action="registration.php" target="_self">
           <button><img src="img/CoursesBTN.png">
             <p>Аккаунт</p>
           </button>

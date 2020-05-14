@@ -29,7 +29,7 @@ if (mb_strlen($pass)<5 || mb_strlen($pass) >30){
 }
 $pass = md5($pass."Rubic123");
 
-$mysql = new mysqli('localhost','root','','rubilang');
+$mysql = new mysqli('//rubilang.kikoriki.space/','rubilang','password','rubilang');
 if ($mysql->connect_error != "") {
     die($mysql->connect_error);
 }

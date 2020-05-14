@@ -288,12 +288,15 @@ footer .container .btn {
 /*************************************************************************************/
 
 .page .back_btn {
-    background: #4F5D75;
+    background: #BFC0C0;
     background-image: url(img/back_btn.png);
     background-repeat: no-repeat;
     border: none;
     height: 40px;
     width: 40px;
+    position: absolute;
+    top:10px;
+    left:10px;
     background-size: 40px 40px;
 }
 

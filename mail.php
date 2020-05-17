@@ -48,6 +48,6 @@ foreach ($_REQUEST as $k => $v) {
 
 $body .= "</table>";
 
-SendMail("gomudusu@p33.org", "Почта с сайта", $body);
+SendMail("rom.evsrubic123@gmail.com", "Почта с сайта", $body);
 
 ?>

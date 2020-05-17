@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
 
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+    
+    <script type="text/javascript" src="js/script.js"></script>
 
 
     <script type="text/javascript">$(window).on('load', function () {

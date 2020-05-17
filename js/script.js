@@ -33,3 +33,17 @@ function menu_mobile() {
         add_menu[0].classList.remove("BTN_Menu_x");
     }
 }
+
+
+$(document).ready(function() {
+    $(".send_mail").click(function() {
+        /** @type {HTMLButtonElement} */
+        var el = this;
+        var form = $(el.form);
+        
+        $.post("/mail.php", form.serialize(), function() {
+            alert("Ваш запрос отправлен!");
+            el.form.reset();
+        });
+    });
+});

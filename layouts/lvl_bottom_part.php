@@ -28,7 +28,7 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <form action="mail.php" method="POST">
+                    <form>
                         <legend>Поддержка</legend>
 
                         <div class="form-group">
@@ -44,7 +44,7 @@
                             <input type="text" class="form-control" id="user_email" name="user_email" placeholder="Укажите почту">
                         </div>
 
-                        <button type="submit" id="service" class="btn btn-primary">Отправить</button>
+                        <button type="button" class="btn btn-primary send_mail">Отправить</button>
                     </form>
                 </div><!-- .col-sm-4 -->
             </div> <!-- .row -->
